@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SCROLLBAR AND SELECTION STYLES */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: rgba(0, 183, 159, 0.5);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 183, 159);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111618;
+}
+
+::selection {
+  background-color: rgb(0, 183, 159);
+  color: #111618;
+}
+
+/* COMMON STYLES */
+.wrapper {
+  @apply container mx-auto px-5 md:px-0;
+}
+
+.section-padding {
+  @apply py-10 md:py-20;
+}
+
+.linear-flow {
+  @apply hover:text-accent relative duration-500;
+}
+
+.linear-flow::after {
+  @apply content-[""] absolute w-0 h-[1px] left-[50%] -bottom-1 bg-accent -translate-x-1/2 origin-center duration-500;
+}
+
+.linear-flow:hover::after {
+  @apply w-full;
+}
+
+.radial {
+  background: radial-gradient(
+    circle,
+    rgba(0, 183, 159, 0.05) 0%,
+    rgba(0, 183, 159, 0.35) 100%
+  );
+}
