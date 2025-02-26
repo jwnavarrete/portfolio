@@ -9,12 +9,12 @@
 
 ::-webkit-scrollbar-thumb {
   height: 10%;
-  background-color: rgba(0, 183, 159, 0.5);
+  background-color: rgba(37, 58, 142, 0.5);
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(0, 183, 159);
+  background-color: rgb(88, 56, 174);
 }
 
 ::-webkit-scrollbar-track {
@@ -22,7 +22,7 @@
 }
 
 ::selection {
-  background-color: rgb(0, 183, 159);
+  background-color: rgb(61, 0, 183);
   color: #111618;
 }
 
@@ -51,6 +51,11 @@
   background: radial-gradient(
     circle,
     rgba(0, 183, 159, 0.05) 0%,
-    rgba(0, 183, 159, 0.35) 100%
+    rgba(47, 58, 160, 0.35) 100%
   );
+}
+
+
+.bg-dark{
+  background-color: #031923;
 }

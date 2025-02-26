@@ -62,9 +62,9 @@ const Hero = () => {
         >
           John Willian Navarrete <br />{" "}
           <ButtonAsLink
-            href="mailto: auronyanu@gmail.com"
+            href="mailto: jwnavarretez@gmail.com"
             target="_blank"
-            placeholder="auronyanu@gmail.com"
+            placeholder="jwnavarretez@gmail.com"
           />
         </motion.p>
         <motion.p
@@ -72,7 +72,7 @@ const Hero = () => {
           whileInView={{ y: 0 }}
           transition={{ ease: "easeInOut", duration: 1, delay: 2.5 }}
         >
-          Based in Bangladesh
+          Based in Ecuador
         </motion.p>
       </div>
 
