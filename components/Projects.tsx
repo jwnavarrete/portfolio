@@ -19,7 +19,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
             .map((project) => (
               <ProjectCard
                 key={project.id}
-                id={project.id}
+                id={project.id || 0}
                 title={project.title}
                 image={project.image}
                 description={project.description}
@@ -35,7 +35,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           data.map((project) => (
             <ProjectCard
               key={project.id}
-              id={project.id}
+              id={project.id || 0}
               title={project.title}
               image={project.image}
               description={project.description}
